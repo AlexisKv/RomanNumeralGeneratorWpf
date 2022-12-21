@@ -1,0 +1,26 @@
+﻿<Window x:Class="RomanNumeralGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RomanNumeralGenerator"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Greetings" Height="600" Width="1000">
+    <Grid x:Name="MainRoot" Background="#ffdadada">
+        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" Text="Roman numerals" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                <Grid Margin="0 0 0 20">
+                    <Button Click="History_click" HorizontalAlignment="Right" Content=" History" Style="{StaticResource MaterialDesignFlatButton}"/>
+                </Grid>
+                <TextBox x:Name="NumberToConvert" materialDesign:HintAssist.Hint="Write your number" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <TextBlock Style="{StaticResource MaterialDesignBody2TextBlock}" Margin="0 20 0 0" HorizontalAlignment="Center" Text="Result: " > <TextBlock Text="" x:Name="answer"></TextBlock></TextBlock>
+                <Button x:Name="GenerateBtn" Content="Convert to roman numerals" Margin="0 20" Click="Button_Click"/>
+            </StackPanel> 
+        </Border>
+    </Grid>
+</Window>
