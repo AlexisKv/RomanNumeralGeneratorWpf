@@ -6,7 +6,9 @@
 
 1️⃣ Clone this repo: https://github.com/AlexisKv/RomanNumeralGeneratorWpf.git
 <br>
-3️⃣ Run the project
+2️⃣ Run the tests
+<br>
+3️⃣ Run the project  
 <br>
 Build on WPF.NET
 <br>
